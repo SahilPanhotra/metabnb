@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 function NavBar() {
   return (
@@ -8,10 +9,10 @@ function NavBar() {
         <div className="nav__logo--text">Metabnb</div>
       </figure>
       <div className="nav__links">
-        <div className="nav__link"><a className="link" href="#">Home</a></div>
-        <div className="nav__link"><a className="link" href="#">Place to Stay</a></div>
-        <div className="nav__link"><a className="link" href="#">NFTs</a></div>
-        <div className="nav__link"><a className="link" href="#">Community</a></div>
+        <div className="nav__link"><Link className="link" href="#">Home</Link></div>
+        <div className="nav__link"><Link className="link" href="#">Place to Stay</Link></div>
+        <div className="nav__link"><Link className="link" href="#">NFTs</Link></div>
+        <div className="nav__link"><Link className="link" href="#">Community</Link></div>
       </div>
       <div className="button__wrapper">
         <button className="btn--primary">Connect Wallet</button>

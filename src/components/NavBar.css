@@ -29,6 +29,7 @@ nav {
   line-height: 20px;
   color: white;
   border: none;
+  width: 100%;
 }
 .nav__logo--wrapper {
   display: flex;
