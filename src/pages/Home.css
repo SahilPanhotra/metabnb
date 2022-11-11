@@ -102,3 +102,64 @@ input:read-only {
   align-items: center;
   padding: 10px 0;
 }
+
+/* NFT SECTION  */
+.nft__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+  text-align: center;
+  margin: 58px 0 43px 0;
+}
+
+.nft__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 23%;
+}
+
+.nft__container--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row__nft {
+    padding-bottom: 53px;
+}
+
+@media (max-width:1000px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (max-width:880px) {
+    .card {
+        width: 45%;
+    }
+    .row {
+        padding: 0 px;
+    }
+}
+@media (max-width:668px) {
+    .card {
+        width: 100%;
+    }
+    .row {
+        padding: 0 50px;
+    }
+}
+@media (max-width:372px) {
+    .row {
+        padding: 0 25px;
+    }
+}

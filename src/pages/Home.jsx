@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import "./Home.css";
+import NFTCard from "../components/NFTCard";
 function Home() {
   return (
     <div>
@@ -42,6 +43,25 @@ function Home() {
           </div>
         </div>
       </div>
+      <main>
+        <section id="NFTs">
+          <div className="row row__nft">
+            <div className="nft__container--wrapper">
+          <h2 className="nft__heading">Inspiration for your next adventure</h2>
+          <div className="nft__container">
+            <NFTCard className="card" />
+            <NFTCard className="card" />
+            <NFTCard className="card" />
+            <NFTCard className="card"/>
+            <NFTCard className="card"/>
+            <NFTCard className="card"/>
+            <NFTCard className="card"/>
+            <NFTCard className="card"/>
+          </div>
+          </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
