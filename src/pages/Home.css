@@ -114,52 +114,110 @@ input:read-only {
 }
 
 .nft__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 24px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .card {
-    width: 23%;
+  width: 23%;
 }
 
 .nft__container--wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 .row__nft {
-    padding-bottom: 53px;
+  padding-bottom: 53px;
+}
+/* ABOUT */
+#learnmore {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+.left-area {
+  width: 40%;
 }
 
-@media (max-width:1000px) {
-    .card {
-        width: 30%;
-    }
+.learnmore__container {
+  padding: 100px 0;
+}
+.about--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+}
+.btn--learnmore {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  color: #a02279;
+  padding: 14px 33px;
+  width: auto;
+}
+.about__para--left {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  margin:35px 0 56px 0;
+}
+.about__heading--left {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+.right__img {
+  width: 100%;
 }
 
-@media (max-width:880px) {
-    .card {
-        width: 45%;
-    }
-    .row {
-        padding: 0 px;
-    }
+@media (max-width: 1000px) {
+  .card {
+    width: 30%;
+  }
 }
-@media (max-width:668px) {
-    .card {
-        width: 100%;
-    }
-    .row {
-        padding: 0 50px;
-    }
+
+@media (max-width: 880px) {
+  .card {
+    width: 45%;
+  }
+  .row {
+    padding: 0 px;
+  }
+  .about--wrapper {
+    flex-direction: column-reverse;
+  }
+  .left-area {
+    width: 100%;
+    text-align: center;
+  }
+  .right-area {
+    width: 100%;
+  }
 }
-@media (max-width:372px) {
-    .row {
-        padding: 0 25px;
-    }
+@media (max-width: 668px) {
+  .card {
+    width: 100%;
+  }
+  .row {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 372px) {
+  .row {
+    padding: 0 25px;
+  }
 }
