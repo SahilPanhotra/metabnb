@@ -1,0 +1,124 @@
+.footer__container {
+  background-color: #1d1d1e;
+ 
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer__container--right {
+    width: 60%;
+    margin: 16px 109px 40px 0;
+}
+.footer__container--left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+  }
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.social-list {
+    display: flex;
+    gap: 32px;
+}
+label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.footer__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #f1f3f9;
+  text-decoration: none;
+}
+.list__link {
+    list-style: none;
+}
+.links__container {
+  display: flex;
+  justify-content: space-between;
+}
+.links__container--unordered {
+  display: flex;
+  flex-direction: column;
+}
+.logo__text {
+  color: #f7f7f7;
+  font-size: 48px;
+}
+
+.copyright {
+  color: #f7f7f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+.container__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+@media (max-width:1024px) {
+    .links__container {
+        flex-direction: column;
+    }
+    .links__container--unordered {
+        display: none;
+    }
+    .links__about-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__container--left {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__container--right {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 16px 0 40px 0;
+    } 
+    .container__copyright {
+        align-items: center;
+        justify-content: center;
+    }
+    .social-list {
+        margin: 24px 0;
+    }
+    .logo__text {
+        font-size: 40px;
+    }
+    .logo__img {
+        width: 32px;
+    }
+}
+@media (max-width:478px) {
+    .footer {
+        flex-direction: column;
+    }
+    .links__about-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__container--right {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } 
+   
+}

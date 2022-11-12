@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import "./Home.css";
 import NFTCard from "../components/NFTCard";
+import Footer from "../components/Footer";
 function Home() {
   const NFTarray = [
     {
@@ -161,7 +162,7 @@ function Home() {
           </div>
         </section>
       </main>
-      
+      <Footer/>
     </div>
   );
 }
