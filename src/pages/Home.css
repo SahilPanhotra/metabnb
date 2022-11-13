@@ -8,7 +8,7 @@ input {
 .hero__section {
   margin: 125px 0 67px 0;
   display: flex;
-  gap: 99px;
+  justify-content: space-between;
 }
 .hero__input {
   width: 60%;
@@ -23,14 +23,17 @@ input:read-only {
   color: #b8b8b8;
 }
 .inputsearch {
+  display: flex;
   position: relative;
   width: 100%;
   padding-right: 27.29px;
 }
 .btn--search {
-  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0px 8px 8px 0px;
-  height: 100%;
   width: 40%;
 }
 .home__container--nav {
@@ -209,6 +212,38 @@ input:read-only {
   .right-area {
     width: 100%;
   }
+  .hero__section {
+    flex-direction: column-reverse;
+  }
+  .hero__section--left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero__section--right {
+    width: 100%;
+  }
+  .hero__title {
+    text-align: center;
+  }
+  .hero__para {
+    text-align: center;
+  }
+  .inputsearch {
+    width: 100%;
+    padding-right: 0;
+  }
+  .btn--search {
+    width: 30%;
+  }
+  .input {
+    padding: 10px 0 10px 8px;
+  }
+  .hero__input  {
+    width: 100%;
+  }
 }
 @media (max-width: 668px) {
   .card {
@@ -217,9 +252,31 @@ input:read-only {
   .row {
     padding: 0 50px;
   }
+  .about__heading--left {
+    font-size: 28px;
+  }
+  .about__para--left {
+    font-size: 16px;
+  }
+  .row__nft {
+    margin-bottom: 53px;
+  }
+ 
 }
 @media (max-width: 372px) {
   .row {
     padding: 0 25px;
   }
+  .nft__heading {
+    font-size: 24px;
+  }
+  .hero__para {
+    font-size: 16px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+   .about__para--left {
+    font-size: 12px;
+  } 
 }

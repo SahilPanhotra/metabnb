@@ -7,9 +7,14 @@
     #b840ae 43.34%,
     #843fe8 78.18%
   );
-  display: inline;
+  width: 100%;
   background-clip: text;
   color: transparent;
+}
+.menu--icon {
+  width: 24px;
+  visibility: hidden;
+  cursor: not-allowed;
 }
 nav {
   display: flex;
@@ -30,10 +35,15 @@ nav {
   color: white;
   border: none;
   width: 100%;
+  white-space: nowrap;
+}
+.nav__logo {
+  width: 100%;
 }
 .nav__logo--wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .link {
   font-weight: 400;
@@ -41,4 +51,42 @@ nav {
   line-height: 25px;
   color: #434343;
   text-decoration: none;
+}
+
+
+@media (max-width: 1000px) {
+  .nav__links {
+    display: none;
+  }
+}
+@media (max-width:554px) {
+  .nav__logo--wrapper{
+    margin-right: 18px;
+  }
+  .btn--primary {
+    padding: 8px 15px 8px 15px;
+    font-size: 12px;
+  }
+  .button__wrapper {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wallet {
+    display: none;
+  }
+  .menu--icon {
+    visibility: visible;
+  }
+  .nav__logo {
+    display: none;
+  }
+}
+@media (max-width:250px) {
+  .btn--primary {
+    padding: 4px 7px 4px 7px;
+    font-size: 10px;
+    height: 20%;
+  }
 }

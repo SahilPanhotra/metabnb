@@ -4,9 +4,11 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <nav>
+      
       <figure className="nav__logo--wrapper">
-        <img src="../logo.svg" alt="" className="nav__logo" />
-        <div className="nav__logo--text">Metabnb</div>
+        <img className="nav__logo" src="../logo.svg" alt=""  />
+        {/* <span className="nav__logo--text">Metabnb</span> */}
+        <img className="menu--icon" src="../bars_solid.svg" alt="" />
       </figure>
       <div className="nav__links">
         <div className="nav__link"><Link className="link" href="#">Home</Link></div>
@@ -15,7 +17,7 @@ function NavBar() {
         <div className="nav__link"><Link className="link" href="#">Community</Link></div>
       </div>
       <div className="button__wrapper">
-        <button className="btn--primary">Connect Wallet</button>
+        <button className="btn--primary">Connect <span className="wallet"> Wallet</span></button>
       </div>
     </nav>
   );

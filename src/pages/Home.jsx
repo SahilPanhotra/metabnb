@@ -102,7 +102,7 @@ function Home() {
                   placeholder="Search for location"
                 />
                 <button className="btn--search btn--primary">Search</button>
-                <img className="dropdown" src="./dropdown.svg" alt="" />
+                {/* <img className="dropdown" src="./dropdown.svg" alt="" /> */}
               </div>
             </div>
             <div className="hero__section--right">
