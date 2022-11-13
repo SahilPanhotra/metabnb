@@ -110,11 +110,13 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="row row__brands">
+        <div className="row__brands">
           <div className="partner__brands">
-            <img src="../mbtoken.svg" alt="Mbtoken" />
-            <img src="../metamask.svg" alt="Metamask" />
-            <img src="../opensea.svg" alt="Opensea" />
+            <figure className="brands__wrapper">
+            <img className="brands__img" src="../mbtoken.svg" alt="Mbtoken" />
+            </figure>
+            <figure className="brands__wrapper"><img className="brands__img" src="../metamask.svg" alt="Metamask" /></figure>
+            <figure className="brands__wrapper"><img className="brands__img" src="../opensea.svg" alt="Opensea" /></figure>
           </div>
         </div>
       </div>

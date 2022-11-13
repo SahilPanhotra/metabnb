@@ -94,13 +94,15 @@ input:read-only {
 .row__brands {
   background: #a02279;
   width: 100%;
-  height: 70px;
 }
 .partner__brands {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+}
+.brands__img {
+  width: 100%;
 }
 
 /* NFT SECTION  */
