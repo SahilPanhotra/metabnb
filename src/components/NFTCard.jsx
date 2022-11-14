@@ -1,7 +1,7 @@
 import React from 'react'
 import "./NFTCard.css"
 
-function NFTCard(props) {``
+function NFTCard(props) {
   return (
     
         <div className="card">
