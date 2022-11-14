@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import "./Home.css";
 import NFTCard from "../components/NFTCard";
 import Footer from "../components/Footer";
+import Modal from "../components/Modal";
 function Home() {
+
+  const [showModel,setShowModel] = useState(false); 
   const NFTarray = [
     {
       id: 1,
@@ -78,11 +81,15 @@ function Home() {
       image: "../nft8.svg",
     },
   ];
+  function handleModal() {
+    setShowModel(!showModel);
+  }
   return (
     <div>
       <div className="home__container--nav">
         <div className="row">
-          <NavBar />
+          <NavBar handleModel={handleModal} />
+          
           <div className="hero__section">
             <div className="hero__section--left">
               <h1 className="hero__title">
@@ -119,6 +126,7 @@ function Home() {
             <figure className="brands__wrapper"><img className="brands__img" src="../opensea.svg" alt="Opensea" /></figure>
           </div>
         </div>
+        {showModel&&<Modal handleModel={handleModal} />}
       </div>
       <main>
         <section id="NFTs">

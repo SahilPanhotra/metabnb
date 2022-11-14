@@ -36,6 +36,7 @@ nav {
   border: none;
   width: 100%;
   white-space: nowrap;
+  cursor: pointer;
 }
 .nav__logo {
   width: 100%;

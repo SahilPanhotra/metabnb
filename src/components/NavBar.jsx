@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "./Modal";
 import "./NavBar.css";
-function NavBar() {
+function NavBar({handleModel}) {
+  
+
   return (
     <nav>
-      
       <figure className="nav__logo--wrapper">
         <img className="nav__logo" src="../logo.svg" alt=""  />
         {/* <span className="nav__logo--text">Metabnb</span> */}
@@ -17,7 +19,7 @@ function NavBar() {
         <div className="nav__link"><Link className="link" href="#">Community</Link></div>
       </div>
       <div className="button__wrapper">
-        <button className="btn--primary">Connect <span className="wallet"> Wallet</span></button>
+        <button className="btn--primary" onClick={handleModel}>Connect <span className="wallet"> Wallet</span></button>
       </div>
     </nav>
   );
