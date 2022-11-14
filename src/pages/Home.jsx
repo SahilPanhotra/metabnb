@@ -1,12 +1,8 @@
-import React, { useState } from "react";
-import NavBar from "../components/NavBar";
+import React from "react";
 import "./Home.css";
 import NFTCard from "../components/NFTCard";
-import Footer from "../components/Footer";
-import Modal from "../components/Modal";
-function Home() {
 
-  const [showModel,setShowModel] = useState(false); 
+function Home() {
   const NFTarray = [
     {
       id: 1,
@@ -81,15 +77,11 @@ function Home() {
       image: "../nft8.svg",
     },
   ];
-  function handleModal() {
-    setShowModel(!showModel);
-  }
+
   return (
     <div>
       <div className="home__container--nav">
         <div className="row">
-          <NavBar handleModel={handleModal} />
-          
           <div className="hero__section">
             <div className="hero__section--left">
               <h1 className="hero__title">
@@ -120,13 +112,20 @@ function Home() {
         <div className="row__brands">
           <div className="partner__brands">
             <figure className="brands__wrapper">
-            <img className="brands__img" src="../mbtoken.svg" alt="Mbtoken" />
+              <img className="brands__img" src="../mbtoken.svg" alt="Mbtoken" />
             </figure>
-            <figure className="brands__wrapper"><img className="brands__img" src="../metamask.svg" alt="Metamask" /></figure>
-            <figure className="brands__wrapper"><img className="brands__img" src="../opensea.svg" alt="Opensea" /></figure>
+            <figure className="brands__wrapper">
+              <img
+                className="brands__img"
+                src="../metamask.svg"
+                alt="Metamask"
+              />
+            </figure>
+            <figure className="brands__wrapper">
+              <img className="brands__img" src="../opensea.svg" alt="Opensea" />
+            </figure>
           </div>
         </div>
-        {showModel&&<Modal handleModel={handleModal} />}
       </div>
       <main>
         <section id="NFTs">
@@ -137,17 +136,18 @@ function Home() {
               </h2>
               <div className="nft__container">
                 {NFTarray.map((nftCard) => {
-
-                   return <NFTCard
-                    key={nftCard.id}
-                    name={nftCard.name}
-                    cost={nftCard.cost}
-                    away={nftCard.away}
-                    stay={nftCard.stay}
-                    rating={nftCard.rating}
-                    image={nftCard.image}
-                    className="card"
-                  />;
+                  return (
+                    <NFTCard
+                      key={nftCard.id}
+                      name={nftCard.name}
+                      cost={nftCard.cost}
+                      away={nftCard.away}
+                      stay={nftCard.stay}
+                      rating={nftCard.rating}
+                      image={nftCard.image}
+                      className="card"
+                    />
+                  );
                 })}
               </div>
             </div>
@@ -159,20 +159,29 @@ function Home() {
               <div className="about--wrapper">
                 <div className="left-area">
                   <h2 className="about__heading--left">Metabnb NFTs</h2>
-                  <p className="about__para--left">Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
-                  <button className="btn--primary btn--learnmore">Learn more</button>
+                  <p className="about__para--left">
+                    Discover our NFT gift cards collection. Loyal customers gets
+                    amazing gift cards which are traded as NFTs. These NFTs
+                    gives our cutomer access to loads of our exclusive services.
+                  </p>
+                  <button className="btn--primary btn--learnmore">
+                    Learn more
+                  </button>
                 </div>
                 <div className="right-area">
                   <figure>
-                  <img className="right__img" src="../about__right.svg" alt="" />
+                    <img
+                      className="right__img"
+                      src="../about__right.svg"
+                      alt=""
+                    />
                   </figure>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <Footer/>
     </div>
   );
 }

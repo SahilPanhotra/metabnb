@@ -1,0 +1,74 @@
+li {
+  list-style: none;
+}
+
+
+.filters__wrapper {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.filter-bar {
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+.filter {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #434343;
+  white-space: nowrap;
+  cursor: not-allowed;
+}
+.filter__type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #333333;
+}
+.filter__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+  padding: 12px;
+}
+.container__page2 {
+  padding-top: 115px;
+}
+.row__page2 {
+  padding: 0 100px;
+}
+
+.nft-cards--wrapper {
+    margin-top: 64px;
+    margin-bottom: 94px;
+}
+
+@media (max-width:1024px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width:768px) {
+    .filter {
+        font-size: 16px ;
+    }
+    .filters__wrapper {
+        gap: 24px;
+    }
+}
+@media (max-width:480px) {
+    .filter {
+        font-size: 14px ;
+    }
+    .filters__wrapper {
+        gap: 18px;
+    }
+}
