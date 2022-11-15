@@ -11,6 +11,10 @@
   background-clip: text;
   color: transparent;
 }
+.not_clickable {
+  cursor: not-allowed;  
+  /* just to let the user know that this function is not yet implemented */
+}
 .nav__container {
   padding-top: 43px;
 }
@@ -69,11 +73,17 @@ nav {
   .nav__links {
     display: none;
   }
+  .menu--icon {
+    visibility: visible;
+  }
+  .nav__logo {
+    display: none;
+  }
 }
 
 @media (max-width: 880px) {
   .row {
-    padding: 0 px;
+    padding: 0 75px;
   }
 }
 @media (max-width: 668px) {
@@ -101,12 +111,8 @@ nav {
   .wallet {
     display: none;
   }
-  .menu--icon {
-    visibility: visible;
-  }
-  .nav__logo {
-    display: none;
-  }
+  
+  
   .nav__container {
     padding-top: 22px;
   }

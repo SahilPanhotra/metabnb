@@ -19,7 +19,7 @@ function PlaceToStay() {
                         <li className='filter'>Off-Grid</li>
                         <li className='filter filter--no-margin'>Farm</li>
                     </ul>
-                    <figure className='filter__button'>
+                    <figure className='filter__button not_clickable'>
                         <p className="filter__type">Location</p>
                         <img src="../filter__setting.svg" alt="filter settings" />
                     </figure>

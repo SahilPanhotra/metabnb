@@ -100,7 +100,7 @@ function Home() {
                   type="text"
                   placeholder="Search for location"
                 />
-                <button className="btn--search btn--primary">Search</button>
+                <button className="btn--search not_clickable">Search</button>
                 {/* <img className="dropdown" src="./dropdown.svg" alt="" /> */}
               </div>
             </div>
@@ -109,7 +109,9 @@ function Home() {
             </div>
           </div>
         </div>
+
         <div className="row__brands">
+          <div className="row">
           <div className="partner__brands">
             <figure className="brands__wrapper">
               <img className="brands__img" src="../mbtoken.svg" alt="Mbtoken" />
@@ -125,11 +127,13 @@ function Home() {
               <img className="brands__img" src="../opensea.svg" alt="Opensea" />
             </figure>
           </div>
+          </div>
         </div>
       </div>
       <main>
         <section id="NFTs">
-          <div className="row row__nft">
+          <div className="row">
+          <div className="row__nft">
             <div className="nft__container--wrapper">
               <h2 className="nft__heading">
                 Inspiration for your next adventure
@@ -152,6 +156,7 @@ function Home() {
               </div>
             </div>
           </div>
+          </div>
         </section>
         <section id="learnmore">
           <div className="learnmore__container">
@@ -164,7 +169,7 @@ function Home() {
                     amazing gift cards which are traded as NFTs. These NFTs
                     gives our cutomer access to loads of our exclusive services.
                   </p>
-                  <button className="btn--primary btn--learnmore">
+                  <button className="btn--learnmore not_clickable">
                     Learn more
                   </button>
                 </div>
