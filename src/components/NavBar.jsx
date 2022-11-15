@@ -1,7 +1,7 @@
 import React  from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-function NavBar({handleModel}) {
+function NavBar({handleModel,handleMenu}) {
   
 
   return (
@@ -11,7 +11,7 @@ function NavBar({handleModel}) {
     <Link className="link" to="/">
       <figure className="nav__logo--wrapper">
         <img className="nav__logo" src="../logo.svg" alt=""  />
-        <img className="menu--icon" src="../bars_solid.svg" alt="" />
+        <button className="menu__button__wrapper" onClick={handleMenu}><img className="menu--icon" src="../bars_solid.svg" alt="" /></button>
       </figure>
       </Link>
       <div className="nav__links">

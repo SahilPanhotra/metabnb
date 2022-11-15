@@ -27,7 +27,11 @@
 .menu--icon {
   width: 24px;
   visibility: hidden;
-  cursor: not-allowed;
+  cursor: pointer;
+}
+.menu__button__wrapper {
+  background: transparent;
+  border: none;
 }
 nav {
   display: flex;

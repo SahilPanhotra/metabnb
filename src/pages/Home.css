@@ -90,6 +90,9 @@ input:read-only {
 }
 .hero__section--right {
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown {
@@ -99,7 +102,6 @@ input:read-only {
   display: none;
 }
 .hero__img {
-  display: block;
   width: 100%;
   margin-right: 19px;
 }
@@ -240,9 +242,11 @@ input:read-only {
   }
   .hero__title {
     text-align: center;
+    line-height: 110%;
   }
   .hero__para {
     text-align: center;
+    line-height: 126%;
   }
   .inputsearch {
     width: 100%;
@@ -257,10 +261,17 @@ input:read-only {
   .hero__input {
     width: 100%;
   }
+  .partner__brands {
+    gap: 16px;
+  }
+  .about__para--left {
+    line-height: 24px;
+  }
 }
 @media (max-width: 668px) {
   .nft__heading {
     font-size: 26px;
+    line-height: 30px;
   }
   .hero__para {
     font-size: 18px;
@@ -276,12 +287,15 @@ input:read-only {
   }
   .about__para--left {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 @media (max-width: 372px) {
   .nft__heading {
     font-size: 24px;
+    line-height: 24px;
   }
+  
   .hero__para {
     font-size: 16px;
   }
